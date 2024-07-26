@@ -1,0 +1,639 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #00964A;
+  --light-primary: #EFFAF4;
+  --black: #000000;
+  --light-black: #202020;
+  --white: #ffffff;
+  --gray: #00000027;
+  --light-gray: #F5F3EF;
+}
+
+@font-face {
+  font-family: Bely-Display;
+  src: url('/assets/fonts/bely/Bely-Display.ttf');
+}
+
+@font-face {
+  font-family: Azo-Sans;
+  src: url('/assets/fonts/azo/Azo-Sans-Light.otf');
+}
+
+@font-face {
+  font-family: Azo-Sans-Medium;
+  src: url('/assets/fonts/azo/Azo-Sans-Medium.otf');
+}
+
+body {
+  font-family: "Azo-Sans", sans-serif !important;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary);
+}
+
+
+/*======= Common CSS Start 
+=================================*/
+.container {
+  max-width: 1365px;
+  margin: 0 auto;
+}
+
+.w_web {
+  width: -webkit-fill-available;
+}
+
+.h_web {
+  height: -webkit-fill-available;
+}
+
+h1 {
+  line-height: 1;
+  font-family: "Bely-Display", sans-serif;
+  font-weight: 400;
+  font-size: 76px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 76px;
+  font-family: "Bely-Display", sans-serif;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+.head {
+  font-family: "Azo-Sans-Medium", sans-serif !important;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.para {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.btn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 15px;
+  font-weight: 600;
+  border: unset;
+  border-radius: 40px;
+  text-transform: uppercase;
+  font-family: "Azo-Sans-Medium", sans-serif !important;
+  background-color: var(--white);
+}
+
+.btn span {
+  margin-top: 2px;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-dark {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 7px 15px;
+  margin-top: 10px;
+}
+
+/*======= Common CSS End 
+=================================*/
+
+/*======= Header CSS start  
+=================================*/
+.header_top_section {
+  background: var(--primary);
+  color: var(--white);
+  position: relative;
+  padding: 10px;
+}
+
+.header_top_text {
+  font-size: 10px;
+  letter-spacing: 2.4px;
+  text-align: center;
+}
+
+.close_icon {
+  cursor: pointer;
+  position: absolute;
+  right: 8px;
+  top: 7px;
+}
+
+.header_section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.header_icons,
+.header_menus {
+  display: flex;
+  gap: 20px;
+  height: fit-content;
+}
+
+.header_menus div {
+  font-size: 12px;
+  letter-spacing: 1.84px;
+  font-weight: 600;
+}
+
+.main_logo {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+/*======= Header CSS end  
+=================================*/
+
+
+
+/*======= Banner CSS start  
+=================================*/
+.banner_section {
+  background: var(--light-primary);
+  background-image: url("/assets/images/banner.webp");
+  height: 670px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner_text {
+  color: var(--white);
+  position: absolute;
+  top: 15%;
+  right: 15%;
+  max-width: 300px;
+}
+
+/*======= Banner CSS end  
+=================================*/
+
+/*======= product info CSS start  
+=================================*/
+.product_info_section {
+  padding: 100px 0;
+}
+
+.product_info_heading {
+  font-size: 22px;
+  max-width: 530px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 70px;
+  letter-spacing: -0.88px;
+  line-height: 34px;
+  color: #999999;
+}
+
+.product_info_images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.product_info_images img {
+  height: 134px;
+}
+
+/*======= product info CSS end  
+=================================*/
+
+/*======= product CSS start  
+=================================*/
+.product_section {
+  padding-bottom: 100px;
+}
+
+.product_area {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.product_card {
+  background: var(--light-gray);
+}
+
+.product_card .head {
+  font-size: 18px;
+}
+
+.product_details_area {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.product_action_area {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+
+.product_price {
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Azo-Sans-Medium", sans-serif !important;
+}
+
+.product_action_area .btn-dark {
+  margin-top: 0 !important;
+}
+
+
+/*======= product CSS end  
+=================================*/
+
+
+/*======= About Us CSS start  
+=================================*/
+.about_us_section {
+  background: var(--light-gray);
+}
+
+.our_story_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+}
+
+.our_story_left {
+  width: 55%;
+}
+
+.our_story_right {
+  width: 45%;
+  padding-right: 100px;
+  display: grid;
+  gap: 20px;
+}
+
+.know_more_section {
+  padding: 100px;
+  display: flex;
+  gap: 70px;
+}
+
+.know_more_left div {
+  font-size: 22px;
+  font-weight: 300;
+  opacity: 0.5;
+  line-height: 28px;
+}
+
+.know_more_left div:first-of-type {
+  margin-top: 50px;
+}
+
+.know_more_left,
+.know_more_right {
+  width: 50%;
+}
+
+.know_more_right {
+  display: grid;
+  gap: 40px;
+}
+
+.know_more_card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.we_matter_section {
+  padding: 0 100px;
+  display: grid;
+  column-gap: 40px;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 650px;
+}
+
+.we_matter_text {
+  grid-area: 1/1/5/4;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.we_matter_img_1 {
+  grid-area: 1/4/7/8;
+  position: relative;
+  z-index: 1;
+}
+
+.we_matter_img_2 {
+  grid-area: 5/1/11/5;
+}
+
+.we_matter_section img {
+  object-fit: cover;
+}
+
+
+/*======= About Us CSS end  
+=================================*/
+
+/*======= Collection CSS start  
+=================================*/
+.collection_section {
+  padding: 100px;
+}
+
+.collection_head {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.collection_head .head {
+  margin: 10px 0 8px;
+}
+
+.collection_more_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.collection_area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.collection_card {
+  height: 450px;
+  background: #00964A;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--white) !important;
+}
+
+.collection_card .para {
+  max-width: 200px;
+  text-align: center;
+}
+
+.collection_card:nth-child(1) {
+  background: #ff8000;
+}
+
+.collection_card:nth-child(2) {
+  background: #98b9d3;
+}
+
+.collection_card:nth-child(3) {
+  background: #90629b;
+}
+
+/*======= Collection CSS end  
+=================================*/
+
+
+/*======= Companies CSS start  
+=================================*/
+.companies_section {
+  background: var(--light-primary);
+  padding: 100px;
+}
+
+.companies_head {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.companies_area {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/*======= Companies CSS end  
+=================================*/
+
+
+/*======= Blog CSS start  
+=================================*/
+.grenery_card {
+  width: 100%;
+  max-width: 375px;
+}
+
+.grenery_card .head {
+  margin-top: 15px;
+  font-size: 18px !important;
+  line-height: 1.5;
+}
+
+/*======= Blog CSS end  
+=================================*/
+
+
+/*======= Instagram CSS start  
+=================================*/
+.instagram_section {
+  padding: 50px 150px 150px;
+  display: grid;
+  gap: 30px;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.instagram_head {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 250px;
+}
+
+.instagram_head img {
+  width: 70px;
+}
+
+.instagram_head .head {
+  margin-bottom: 0 !important;
+  line-height: 1.2;
+}
+
+/*======= Instagram CSS end  
+=================================*/
+
+/*======= CTA CSS start  
+=================================*/
+.cta-section {
+  background: var(--light-primary);
+  background-image: url("/assets/images/cta-banner.webp");
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.cta_head {
+  position: absolute;
+  top: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.cta_head h2 {
+  color: var(--white);
+}
+
+/*======= CTA CSS end  
+=================================*/
+
+
+/*======= Footer CSS start  
+=================================*/
+.footer_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--light-gray);
+  padding: 100px;
+  gap: 70px;
+}
+
+.footer_menu {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.footer_menu .para div {
+  margin-bottom: 10px;
+}
+
+.footer_section .head {
+  margin-bottom: 20px;
+}
+
+.footer_info .para div:first-child {
+  margin-bottom: 20px;
+}
+
+.footer_social .contact_mail {
+  display: flex;
+  align-items: end;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.contact_mail input {
+  border: 1px solid transparent;
+  border-bottom: 1px solid #000000;
+  background: var(--light-gray);
+  padding: 8px;
+  width: 200px;
+}
+
+.social_area {
+  display: flex;
+  gap: 30px;
+}
+
+.social_left img {
+  width: 60px;
+}
+
+.social_right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social_right img {
+  width: 30px;
+}
+
+.social_icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/*======= Footer CSS end  
+=================================*/
+
+
+/*============ Media Screens >>>>>>>>>>>>>>>>>>>>>>>>>>
+=================================*/
+
+/*============ Desktop Screen ============*/
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 1350px) {
+
+  /*============ Common Section ============*/
+  .container {
+    max-width: unset;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+}
+
+@media (max-width: 1250px) {}
+
+/*============ Tablet Screen ============*/
+@media screen and (max-width: 991px) {}
+
+/*============ Mobile Screen ============*/
+@media (max-width: 676px) {}
+
+@media (max-width: 575px) {}
