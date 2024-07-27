@@ -58,6 +58,14 @@ a {
   height: -webkit-fill-available;
 }
 
+.w_100 {
+  width: 100%;
+}
+
+.h_100 {
+  height: 100%;
+}
+
 h1 {
   line-height: 1;
   font-family: "Bely-Display", sans-serif;
@@ -225,6 +233,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 50px;
 }
 
@@ -465,7 +474,7 @@ h2 {
 =================================*/
 .grenery_card {
   width: 100%;
-  max-width: 375px;
+  max-width: 100%;
 }
 
 .grenery_card .head {
@@ -510,7 +519,7 @@ h2 {
 
 /*======= CTA CSS start  
 =================================*/
-.cta-section {
+.cta_section {
   background: var(--light-primary);
   background-image: url("/assets/images/cta-banner.webp");
   height: 350px;
@@ -523,11 +532,13 @@ h2 {
 .cta_head {
   position: absolute;
   top: 15%;
-  width: 100%;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   gap: 15px;
+  width: 100%;
 }
 
 .cta_head h2 {
@@ -546,6 +557,10 @@ h2 {
   background: var(--light-gray);
   padding: 100px;
   gap: 70px;
+}
+
+.footer_section hr {
+  display: none;
 }
 
 .footer_menu {
@@ -622,18 +637,281 @@ h2 {
   /*============ Common Section ============*/
   .container {
     max-width: unset;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 8% !important;
+    padding-right: 8% !important;
   }
 
 }
 
-@media (max-width: 1250px) {}
+@media (max-width: 1250px) {
+
+  /*============ Product Info Section ============*/
+  .product_info_section {
+    padding: 80px 0;
+  }
+
+  /*============ Collection Section ============*/
+  .collection_section {
+    padding: 80px;
+  }
+
+  /*============ Companies Section ============*/
+  .companies_section {
+    padding: 80px;
+  }
+
+  /*============ Footer Section ============*/
+  .footer_section {
+    padding: 80px;
+  }
+}
 
 /*============ Tablet Screen ============*/
-@media screen and (max-width: 991px) {}
+@media screen and (max-width: 991px) {
+
+  /*============ Common Section ============*/
+  h1,
+  h2 {
+    font-size: 66px;
+    margin-bottom: 40px;
+  }
+
+
+
+  /*============ Banner Section ============*/
+  .banner_text {
+    top: 15%;
+    right: 10%;
+  }
+
+  /*============ Product Info Section ============*/
+  .product_info_section {
+    padding: 50px 0;
+  }
+
+  .product_info_images {
+    gap: 30px;
+  }
+
+  .product_info_images img {
+    height: 100px;
+  }
+
+  .product_info_heading {
+    font-size: 19px;
+    margin-bottom: 50px;
+    line-height: 28px;
+  }
+
+  /*============ Collection Section ============*/
+  .collection_section {
+    padding: 50px;
+  }
+
+  .collection_head {
+    margin-bottom: 50px;
+  }
+
+  .collection_more_btn {
+    margin-top: 50px;
+  }
+
+  .collection_area {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .collection_card {
+    height: 400px;
+  }
+
+  /*============ Companies Section ============*/
+  .companies_section {
+    padding: 50px;
+  }
+
+  .companies_head {
+    margin-bottom: 50px;
+  }
+
+  .companies_area {
+    gap: 30px;
+  }
+
+  /*============ CTA Section ============*/
+  .cta_section {
+    height: 300px;
+  }
+
+  .cta_head h2 {
+    margin-bottom: 30px;
+  }
+
+  /*============ Footer Section ============*/
+  .footer_section {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    gap: 50px;
+  }
+
+  .footer_social {
+    grid-area: 2/1/3/3;
+  }
+}
 
 /*============ Mobile Screen ============*/
-@media (max-width: 676px) {}
+@media (max-width: 676px) {
 
-@media (max-width: 575px) {}
+  /*============ Common Section ============*/
+  h1,
+  h2 {
+    font-size: 56px;
+    margin-bottom: 30px;
+  }
+
+  .head {
+    font-size: 19px;
+    margin-bottom: 8px;
+  }
+
+  .para {
+    font-size: 12px;
+  }
+
+  /*============ Banner Section ============*/
+  .banner_text {
+    top: 15%;
+    right: 8%;
+    max-width: 250px;
+  }
+
+  /*============ Product Info Section ============*/
+  .product_info_section {
+    padding: 30px 0;
+  }
+
+  .product_info_images {
+    gap: 20px;
+  }
+
+  .product_info_heading {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 22px;
+  }
+
+  /*============ Collection Section ============*/
+  .collection_section {
+    padding: 30px;
+  }
+
+  .collection_head {
+    margin-bottom: 30px;
+  }
+
+  .collection_more_btn {
+    margin-top: 30px;
+  }
+
+  .collection_area {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .collection_card {
+    height: 350px;
+  }
+
+  /*============ Companies Section ============*/
+  .companies_section {
+    padding: 30px;
+  }
+
+  .companies_head {
+    margin-bottom: 30px;
+  }
+
+  .companies_area {
+    gap: 20px;
+  }
+
+  /*============ CTA Section ============*/
+  .cta_section {
+    height: 250px;
+  }
+
+  .cta_head {
+    gap: 5px;
+    top: 10%;
+  }
+
+  .cta_head h2 {
+    margin-bottom: 20px;
+  }
+
+
+}
+
+@media (max-width: 575px) {
+
+  /*============ Common Section ============*/
+  h1,
+  h2 {
+    font-size: 46px;
+  }
+
+  /*============ Banner Section ============*/
+  .banner_text {
+    max-width: 200px;
+  }
+
+  /*============ Product Info Section ============*/
+  .product_info_images img {
+    height: 80px;
+  }
+
+  /*============ Footer Section ============*/
+  .footer_section {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+    gap: 20px;
+  }
+
+  .footer_section hr {
+    display: block;
+  }
+
+  .footer_menu {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .footer_section .head {
+    font-size: 18px;
+  }
+
+  .footer_social {
+    grid-area: unset;
+  }
+
+  .footer_social .contact_mail {
+    gap: 10px;
+  }
+
+  .social_area {
+    gap: 20px;
+  }
+
+  .btn .text {
+    display: none;
+  }
+
+  .social_left img {
+    width: 50px;
+  }
+
+  .social_right img {
+    width: 25px;
+  }
+}
