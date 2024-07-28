@@ -160,7 +160,10 @@ h2 {
   position: relative;
 }
 
-.header_icons,
+.header_icons img {
+  width: 120px;
+}
+
 .header_menus {
   display: flex;
   gap: 20px;
@@ -316,9 +319,13 @@ h2 {
 
 .our_story_right {
   width: 45%;
-  padding-right: 100px;
   display: grid;
   gap: 20px;
+}
+
+.our_story_right h2,
+.our_story_right .para {
+  max-width: 460px;
 }
 
 .know_more_section {
@@ -660,10 +667,31 @@ h2 {
     padding: 80px;
   }
 
+  /*============ About Us Section ============*/
+  .our_story_section {
+    gap: 50px;
+  }
+
+  .know_more_section {
+    padding: 80px 50px;
+    gap: 50px;
+  }
+
+  .we_matter_section {
+    padding: 0 50px;
+    column-gap: 30px;
+    height: 700px;
+  }
+
+  .we_matter_text {
+    gap: 10px;
+  }
+
   /*============ Footer Section ============*/
   .footer_section {
     padding: 80px;
   }
+
 }
 
 /*============ Tablet Screen ============*/
@@ -736,6 +764,60 @@ h2 {
 
   .companies_area {
     gap: 30px;
+  }
+
+  /*============ About Us Section ============*/
+  .our_story_section {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .our_story_left {
+    width: 100%;
+  }
+
+  .our_story_right {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .our_story_right h2 {
+    margin-bottom: 10px;
+  }
+
+  .know_more_section {
+    padding: 50px 0;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .know_more_left,
+  .know_more_right {
+    width: 100%;
+  }
+
+  .know_more_left div:first-of-type {
+    margin-top: 35px;
+  }
+
+  .know_more_right {
+    gap: 30px;
+  }
+
+  .know_more_card {
+    gap: 22px;
+  }
+
+  .we_matter_section {
+    padding: 0 0 30px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .we_matter_img_2 {
+    display: none !important;
   }
 
   /*============ CTA Section ============*/
@@ -833,6 +915,49 @@ h2 {
 
   .companies_area {
     gap: 20px;
+  }
+
+  /*============ About Us Section ============*/
+  .our_story {
+    padding: 0 !important;
+  }
+
+  .our_story_section {
+    gap: 20px;
+  }
+
+  .our_story_right {
+    padding: 0 30px;
+  }
+
+  .know_more_section {
+    padding: 30px;
+    gap: 30px;
+  }
+
+  .know_more_left div {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .know_more_left div:first-of-type {
+    margin-top: 20px;
+  }
+
+  .know_more_right {
+    gap: 20px;
+  }
+
+  .know_more_card {
+    gap: 0px;
+  }
+
+  .know_more_card img {
+    display: none;
+  }
+
+  .we_matter_text {
+    padding: 0 30px;
   }
 
   /*============ CTA Section ============*/
