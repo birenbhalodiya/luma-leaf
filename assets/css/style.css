@@ -42,7 +42,6 @@ a {
   color: var(--primary);
 }
 
-
 /*======= Common CSS Start 
 =================================*/
 .container {
@@ -190,8 +189,6 @@ h2 {
 /*======= Header CSS end  
 =================================*/
 
-
-
 /*======= Banner CSS start  
 =================================*/
 .banner_section {
@@ -253,11 +250,11 @@ h2 {
   padding-bottom: 100px;
 }
 
-.product_area {
+/* .product_area {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 20px;
-}
+} */
 
 .product_card {
   background: var(--light-gray);
@@ -265,6 +262,28 @@ h2 {
 
 .product_card .head {
   font-size: 18px;
+}
+
+.product_section .collection_head,
+.product_section .collection_more_btn {
+  margin: 0 !important;
+}
+
+.product_slider {
+  padding: 70px 0;
+}
+
+.product_area .swiper-pagination {
+  bottom: 25px;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000000 !important;
 }
 
 .product_details_area {
@@ -294,10 +313,8 @@ h2 {
   margin-top: 0 !important;
 }
 
-
 /*======= product CSS end  
 =================================*/
-
 
 /*======= About Us CSS start  
 =================================*/
@@ -392,7 +409,6 @@ h2 {
   object-fit: cover;
 }
 
-
 /*======= About Us CSS end  
 =================================*/
 
@@ -454,7 +470,6 @@ h2 {
 /*======= Collection CSS end  
 =================================*/
 
-
 /*======= Companies CSS start  
 =================================*/
 .companies_section {
@@ -476,7 +491,6 @@ h2 {
 /*======= Companies CSS end  
 =================================*/
 
-
 /*======= Blog CSS start  
 =================================*/
 .grenery_card {
@@ -492,7 +506,6 @@ h2 {
 
 /*======= Blog CSS end  
 =================================*/
-
 
 /*======= Instagram CSS start  
 =================================*/
@@ -554,7 +567,6 @@ h2 {
 
 /*======= CTA CSS end  
 =================================*/
-
 
 /*======= Footer CSS start  
 =================================*/
@@ -637,9 +649,7 @@ h2 {
 
 /*============ Desktop Screen ============*/
 
-@media (max-width: 1440px) {}
-
-@media (max-width: 1350px) {
+@media (max-width: 1440px) {
 
   /*============ Common Section ============*/
   .container {
@@ -647,10 +657,16 @@ h2 {
     padding-left: 8% !important;
     padding-right: 8% !important;
   }
-
 }
 
+@media (max-width: 1350px) {}
+
 @media (max-width: 1250px) {
+
+  /*============ Product Section ============*/
+  .product_section {
+    padding-bottom: 80px;
+  }
 
   /*============ Product Info Section ============*/
   .product_info_section {
@@ -710,6 +726,15 @@ h2 {
   .banner_text {
     top: 15%;
     right: 10%;
+  }
+
+  /*============ Product Section ============*/
+  .product_section {
+    padding-bottom: 50px;
+  }
+
+  .product_slider {
+    padding: 50px 0;
   }
 
   /*============ Product Info Section ============*/
@@ -865,6 +890,20 @@ h2 {
     top: 15%;
     right: 8%;
     max-width: 250px;
+  }
+
+  /*============ Product Section ============*/
+  .product_section {
+    padding: 0 0 30px !important;
+
+  }
+
+  .product_slider {
+    padding: 30px 0;
+  }
+
+  .product_area .swiper-pagination {
+    bottom: 5px;
   }
 
   /*============ Product Info Section ============*/

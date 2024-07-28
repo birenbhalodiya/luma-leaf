@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>luma leaf</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -38,7 +40,6 @@
       </div>
     </nav>
   </header>
-
   <!--------------------  Header End  
     ------------------------------------------->
 
@@ -61,7 +62,6 @@
       </button>
     </div>
   </section>
-
   <!--------------------  Banner Section End 
     ------------------------------------------------>
 
@@ -82,7 +82,6 @@
       <img src="./assets/images/no-bad-stuff.webp" alt="no-bad-stuff" />
     </div>
   </section>
-
   <!--------------------  Product Info Section End 
     ------------------------------------------------>
 
@@ -94,75 +93,90 @@
       <div class="head">Shop Our Skin-Loving Lineup</div>
       <div class="para">Skincare formulated for hydrated, nourished, hey-good-looking skin.</div>
     </div>
+    <!-- Swiper -->
     <div class="product_area">
-      <div class="product_card">
-        <img src="./assets/images/relief-repair-moisturizer.webp" alt="relief-repair-moisturizer" class="w_web h_web" />
-        <div class="product_details_area">
-          <div>
-            <div class="head">Relief & Repair Moisturizer</div>
-            <div class="para">A moisturizer for dry, sensitive skin that seriously hydrates and soothes.</div>
+      <div class="swiper product_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="product_card">
+              <img src="./assets/images/relief-repair-moisturizer.webp" alt="relief-repair-moisturizer"
+                class="w_web h_web" />
+              <div class="product_details_area">
+                <div>
+                  <div class="head">Relief & Repair Moisturizer</div>
+                  <div class="para">A moisturizer for dry, sensitive skin that seriously hydrates and soothes.</div>
+                </div>
+                <div class="product_action_area">
+                  <div class="product_price">$0.00</div>
+                  <div>
+                    <button class="btn btn-dark">
+                      <span>add to cart</span>
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
+                          <path fill="white" fill-rule="evenodd"
+                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="product_action_area">
-            <div class="product_price">$0.00</div>
-            <div>
-              <button class="btn btn-dark">
-                <span>add to cart</span>
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
-                    <path fill="white" fill-rule="evenodd"
-                      d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-                  </svg>
-                </span>
-              </button>
+          <div class="swiper-slide">
+            <div class="product_card">
+              <img src="./assets/images/afterglow-serum.webp" alt="afterglow-serum" class="w_web h_web" />
+              <div class="product_details_area">
+                <div>
+                  <div class="head">Afterglow Serum</div>
+                  <div class="para">A glow-inducing, antioxidant-infused serum that’s gentle on skin.</div>
+                </div>
+                <div class="product_action_area">
+                  <div class="product_price">$0.00</div>
+                  <div>
+                    <button class="btn btn-dark">
+                      <span>add to cart</span>
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
+                          <path fill="white" fill-rule="evenodd"
+                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product_card">
+              <img src="./assets/images/clean-slate-serum.webp" alt="clean-slate-serum" class="w_web h_web" />
+              <div class="product_details_area">
+                <div>
+                  <div class="head">Clean Slate Serum</div>
+                  <div class="para">A purifying, oil free serum that clears the way for great skin.</div>
+                </div>
+                <div class="product_action_area">
+                  <div class="product_price">$0.00</div>
+                  <div>
+                    <button class="btn btn-dark">
+                      <span>add to cart</span>
+                      <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
+                          <path fill="white" fill-rule="evenodd"
+                            d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
+                        </svg>
+                      </span>
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="product_card">
-        <img src="./assets/images/afterglow-serum.webp" alt="afterglow-serum" class="w_web h_web" />
-        <div class="product_details_area">
-          <div>
-            <div class="head">Afterglow Serum</div>
-            <div class="para">A glow-inducing, antioxidant-infused serum that’s gentle on skin.</div>
-          </div>
-          <div class="product_action_area">
-            <div class="product_price">$0.00</div>
-            <div>
-              <button class="btn btn-dark">
-                <span>add to cart</span>
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
-                    <path fill="white" fill-rule="evenodd"
-                      d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product_card">
-        <img src="./assets/images/clean-slate-serum.webp" alt="clean-slate-serum" class="w_web h_web" />
-        <div class="product_details_area">
-          <div>
-            <div class="head">Clean Slate Serum</div>
-            <div class="para">A purifying, oil free serum that clears the way for great skin.</div>
-          </div>
-          <div class="product_action_area">
-            <div class="product_price">$0.00</div>
-            <div>
-              <button class="btn btn-dark">
-                <span>add to cart</span>
-                <span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
-                    <path fill="white" fill-rule="evenodd"
-                      d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-                  </svg>
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
     <div class="collection_more_btn">
@@ -385,7 +399,6 @@
   <!--------------------  Learn More Section End 
     ------------------------------------------------>
 
-
   <!--------------------  Blog Section Start 
     ------------------------------------------------>
   <section class="container collection_section">
@@ -465,7 +478,6 @@
   <!--------------------  Blog Section End 
     ------------------------------------------------>
 
-
   <!--------------------  Instagram Section Start 
     ------------------------------------------------>
   <section class="container instagram_section">
@@ -494,7 +506,6 @@
   <!--------------------  Instagram Section End 
     ------------------------------------------------>
 
-
   <!--------------------  CTA Section Start 
     ------------------------------------------------>
   <section class="container cta_section">
@@ -515,7 +526,6 @@
   </section>
   <!--------------------  CTA Section End 
     ------------------------------------------------>
-
 
   <!--------------------  Footer Section Start 
     ------------------------------------------------>
@@ -597,6 +607,54 @@
 
   <!--------- External JavaScript file link --------->
   <script src="./assets/js/main.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".product_slider", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1.2,
+          spaceBetween: 10,
+          centeredSlides: true,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          autoplay: false,
+        },
+      },
+    });
+  </script>
+
 </body>
 
 </html>
