@@ -27,13 +27,74 @@
       </div>
     </div>
     <nav class="container header_section">
-      <div class="header_menus">
-        <div>SHOP</div>
-        <div>ABOUT</div>
-        <div>THE GREENERY</div>
+      <ul class="header_menus">
+        <li class="dropdown">
+          <a href="#">
+            <div>SHOP</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m7 10l5 5m0 0l5-5" />
+            </svg>
+          </a>
+          <ul class="dropdown_area">
+            <div class="dropdown_content multiple_row">
+              <div>
+                <div class="head">By category</div>
+                <li><a href="#">Shop All</a></li>
+                <li><a href="#">Cleansers</a></li>
+                <li><a href="#">Serums</a></li>
+                <li><a href="#">Moisturizers</a></li>
+                <li><a href="#">Mists</a></li>
+              </div>
+              <div class="center_line"></div>
+              <div>
+                <div class="head">By Collection</div>
+                <li><a href="#">Illuminating</a></li>
+                <li><a href="#">Clearing</a></li>
+                <li><a href="#">Soothing</a></li>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#">
+            <div>ABOUT</div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+              <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m7 10l5 5m0 0l5-5" />
+            </svg>
+          </a>
+          <ul class="dropdown_area">
+            <div class="dropdown_content">
+              <li><a href="#">Our Story</a></li>
+              <li><a href="#">Our Promise</a></li>
+              <li><a href="#">Our Beliefs</a></li>
+            </div>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <div>THE GREENERY</div>
+          </a>
+        </li>
+      </ul>
+      <div class="mobile_menu" onclick="add()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.6em" height="1.7em" viewBox="0 0 24 24">
+          <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 8h16M4 16h16" />
+        </svg>
       </div>
-      <div class="main_logo">
+      <div class="close_menu click" onclick="remove()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.7em" height="1.7em" viewBox="0 0 24 24">
+          <path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m16 16l-4-4m0 0L8 8m4 4l4-4m-4 4l-4 4" />
+        </svg>
+      </div>
+      <div class="main_logo desktop_logo">
         <img src="./assets/images/logo.webp" alt="logo" />
+      </div>
+      <div class="mobile_logo main_logo">
+        <img src="./assets/images/mobile_logo.svg" alt="logo" />
       </div>
       <div class="header_icons">
         <img src="./assets/images/header_icon.webp" alt="header-icon" class="w_web h_web" />

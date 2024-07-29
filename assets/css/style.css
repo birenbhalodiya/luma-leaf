@@ -160,19 +160,37 @@ h2 {
 }
 
 .header_icons img {
+  position: relative;
   width: 120px;
+  z-index: 2;
+}
+
+.close_menu,
+.mobile_logo,
+.mobile_menu {
+  display: none;
 }
 
 .header_menus {
   display: flex;
   gap: 20px;
   height: fit-content;
+  position: relative !important;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.header_menus li a {
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .header_menus div {
   font-size: 12px;
   letter-spacing: 1.84px;
   font-weight: 600;
+  margin-top: 5px;
 }
 
 .main_logo {
@@ -184,6 +202,68 @@ h2 {
   top: 0;
   text-align: center;
   z-index: 1;
+}
+
+.header_menus a {
+  color: var(--black) !important;
+}
+
+.header_menus>li {
+  position: relative;
+}
+
+.header_menus .dropdown_area {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  min-width: 160px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header_menus .dropdown_area li {
+  padding: 8px 16px;
+  width: max-content;
+}
+
+.header_menus .dropdown_area li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 16px;
+}
+
+.header_menus .dropdown:hover .dropdown_area {
+  display: block;
+  padding-top: 10px;
+}
+
+.dropdown_content {
+  padding: 15px 5px;
+  background: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.multiple_row {
+  display: flex;
+  gap: 10px;
+}
+
+.center_line {
+  height: auto;
+  width: 1px;
+  background: var(--gray);
+}
+
+.dropdown_content .head {
+  padding: 8px 16px;
+  text-transform: uppercase;
+  width: max-content;
+  color: #7E7E7E;
+  font-size: 12px !important;
 }
 
 /*======= Header CSS end  
@@ -895,6 +975,111 @@ h2 {
     font-size: 12px;
   }
 
+  /*============ Header Section ============*/
+  .header_section {
+    padding: 15px 20px !important;
+  }
+
+
+  .close_menu,
+  .mobile_menu {
+    display: flex !important;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+  }
+
+  .header_menus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute !important;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    padding: 20px 30px !important;
+    left: -100%;
+    top: 56px;
+    gap: 10px;
+    background: var(--white);
+    text-align: center;
+    transition: all 0.8s ease;
+  }
+
+  .header_menus li {
+    gap: 10px;
+  }
+
+  .header_menus li div {
+    font-size: 16px;
+  }
+
+  .header_menus li svg {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .header_menus .dropdown_area {
+    position: relative !important;
+  }
+
+  .active {
+    left: 0 !important;
+    opacity: 1 !important;
+  }
+
+  ul li {
+    padding: 7px 0px;
+  }
+
+  .mobile_logo {
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile_logo img {
+    width: 22px !important;
+  }
+
+  /* .header_menus, */
+  .desktop_logo {
+    display: none !important;
+  }
+
+  .header_icons img {
+    width: 90px;
+  }
+
+  .click {
+    display: none !important;
+  }
+
+  .dropdown_content {
+    padding: 0;
+    background: transparent;
+    box-shadow: unset;
+  }
+
+  .header_menus .dropdown:hover .dropdown_area {
+    padding-top: 5px;
+  }
+
+  .dropdown_content .head {
+    padding: 8px 0px;
+  }
+
+  .header_menus .dropdown_area li {
+    font-size: 14px !important;
+    padding: 8px 0px;
+  }
+
+  .multiple_row {
+    gap: 20px;
+  }
+
   /*============ Banner Section ============*/
   .banner_text {
     top: 15%;
@@ -939,19 +1124,6 @@ h2 {
 
   .blog_section {
     padding: 30px !important;
-  }
-
-  .collection_head {
-    /* margin-bottom: 30px; */
-  }
-
-  .collection_more_btn {
-    /* margin-top: 30px; */
-  }
-
-  .collection_area {
-    /* grid-template-columns: repeat(1, 1fr);
-    gap: 15px; */
   }
 
   .collection_card {
@@ -1048,7 +1220,6 @@ h2 {
     margin-bottom: 20px;
   }
 
-
 }
 
 @media (max-width: 575px) {
@@ -1059,7 +1230,21 @@ h2 {
     font-size: 46px;
   }
 
+  /*============ Header Section ============*/
+  .header_top_text {
+    font-size: 8px;
+  }
+
+  .close_icon svg {
+    width: 0.8em !important;
+    height: 0.8em !important;
+  }
+
   /*============ Banner Section ============*/
+  .banner_section {
+    height: 500px;
+  }
+
   .banner_text {
     max-width: 200px;
   }
