@@ -573,25 +573,49 @@
     ------------------------------------------------>
   <section class="container instagram_section">
     <div class="instagram_head">
-      <img src="./assets/images/instagram.webp" alt="instagram" />
-      <div class="head">Join the Clean <br /> Skin Crew on IG</div>
+      <div class="insta_img_head">
+        <img src="./assets/images/instagram.webp" alt="instagram" />
+        <div class="head">Join the Clean <br /> Skin Crew on IG</div>
+      </div>
       <div class="para">Follow us at <a href="#">@lumaandleaf</a> for skincare advice, good news, and bright vibes.
       </div>
     </div>
-    <div>
+    <div class="insta_image">
       <img src="./assets/images/instagram-1.webp" alt="instagram-1" class="w_100" />
     </div>
-    <div>
+    <div class="insta_image">
       <img src="./assets/images/instagram-2.webp" alt="instagram-2" class="w_100" />
     </div>
-    <div>
+    <div class="insta_image">
       <img src="./assets/images/instagram-3.webp" alt="instagram-3" class="w_100" />
     </div>
-    <div>
+    <div class="insta_image">
       <img src="./assets/images/instagram-4.webp" alt="instagram-4" class="w_100" />
     </div>
-    <div>
+    <div class="insta_image">
       <img src="./assets/images/instagram-5.webp" alt="instagram-5" class="w_100" />
+    </div>
+    <div class="insta_slider_area">
+      <div class="swiper insta_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/images/instagram-1.webp" alt="instagram-1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/instagram-2.webp" alt="instagram-2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/instagram-3.webp" alt="instagram-3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/instagram-4.webp" alt="instagram-4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/images/instagram-5.webp" alt="instagram-5" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </section>
   <!--------------------  Instagram Section End 
@@ -778,6 +802,19 @@
           spaceBetween: 30,
           autoplay: false,
         },
+      },
+    });
+
+    var swiper = new Swiper(".insta_slider", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
       },
     });
   </script>

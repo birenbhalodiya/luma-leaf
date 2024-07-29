@@ -616,11 +616,16 @@ h2 {
 
 .instagram_head img {
   width: 70px;
+  margin-bottom: 20px;
 }
 
 .instagram_head .head {
   margin-bottom: 0 !important;
   line-height: 1.2;
+}
+
+.insta_slider_area {
+  display: none;
 }
 
 /*======= Instagram CSS end  
@@ -797,6 +802,10 @@ h2 {
     padding: 80px;
   }
 
+  .instagram_section {
+    padding: 0 0 100px;
+  }
+
 }
 
 /*============ Tablet Screen ============*/
@@ -808,8 +817,6 @@ h2 {
     font-size: 66px;
     margin-bottom: 40px;
   }
-
-
 
   /*============ Banner Section ============*/
   .banner_text {
@@ -849,19 +856,6 @@ h2 {
   /*============ Collection Section ============*/
   .collection_section {
     padding: 50px;
-  }
-
-  .collection_head {
-    /* margin-bottom: 50px; */
-  }
-
-  .collection_more_btn {
-    /* margin-top: 50px; */
-  }
-
-  .collection_area {
-    /* grid-template-columns: repeat(2, 1fr);
-    gap: 20px; */
   }
 
   .collection_card {
@@ -953,6 +947,10 @@ h2 {
 
   .footer_social {
     grid-area: 2/1/3/3;
+  }
+
+  .instagram_section {
+    padding: 0 0 70px;
   }
 }
 
@@ -1099,7 +1097,7 @@ h2 {
   }
 
   .product_area .swiper-pagination {
-    bottom: 5px;
+    bottom: 10px;
   }
 
   /*============ Product Info Section ============*/
@@ -1220,7 +1218,42 @@ h2 {
     margin-bottom: 20px;
   }
 
+  .instagram_section {
+    padding: 30px 0;
+    display: block;
+  }
+
+  .insta_slider {
+    padding: 30px 0;
+  }
+
+  .insta_slider img {
+    object-fit: contain;
+    width: inherit;
+  }
+
+  .insta_image {
+    display: none !important;
+  }
+
+  .insta_slider_area {
+    display: block;
+  }
+
+  .instagram_head .insta_img_head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .instagram_head img {
+    margin-bottom: 0 !important;
+    width: 60px;
+  }
 }
+
+
+
 
 @media (max-width: 575px) {
 
@@ -1297,5 +1330,9 @@ h2 {
 
   .social_right img {
     width: 25px;
+  }
+
+  .collection_head img {
+    width: 70px;
   }
 }
