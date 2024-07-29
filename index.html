@@ -93,7 +93,6 @@
       <div class="head">Shop Our Skin-Loving Lineup</div>
       <div class="para">Skincare formulated for hydrated, nourished, hey-good-looking skin.</div>
     </div>
-    <!-- Swiper -->
     <div class="product_area">
       <div class="swiper product_slider">
         <div class="swiper-wrapper">
@@ -308,27 +307,44 @@
       <div class="head">Our Collections</div>
       <div class="para">We’ve created three collections that reach out to everybody’s skincare needs.</div>
     </div>
-    <div class="collection_area">
-      <div class="collection_card">
-        <div>
-          <img src="./assets/images/illuminating.webp" alt="illuminating" />
+    <div class="collection_area product_area">
+      <div class="swiper collection_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="collection_card">
+              <div class="collection_img">
+                <img src="./assets/images/illuminating.webp" alt="illuminating" />
+              </div>
+              <div class="collection_text">
+                <div class="head">Illuminating</div>
+                <div class="para">Formulated for bright, hydrated, oh-so-beautiful skin.</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="collection_card collection_card_1">
+              <div class="collection_img">
+                <img src="./assets/images/clearing.webp" alt="clearing" />
+              </div>
+              <div class="collection_text">
+                <div class="head">Clearing</div>
+                <div class="para">Formulated for bright, hydrated, oh-so-beautiful skin.</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="collection_card collection_card_2">
+              <div class="collection_img">
+                <img src="./assets/images/soothing.webp" alt="soothing" />
+              </div>
+              <div class="collection_text">
+                <div class="head">Soothing</div>
+                <div class="para">Formulated for bright, hydrated, oh-so-beautiful skin.</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="head">Illuminating</div>
-        <div class="para">Formulated for bright, hydrated, oh-so-beautiful skin.</div>
-      </div>
-      <div class="collection_card">
-        <div>
-          <img src="./assets/images/clearing.webp" alt="clearing" />
-        </div>
-        <div class="head">Clearing</div>
-        <div class="para">Formulated for bright, hydrated, oh-so-beautiful skin.</div>
-      </div>
-      <div class="collection_card">
-        <div>
-          <img src="./assets/images/soothing.webp" alt="soothing" />
-        </div>
-        <div class="head">Soothing</div>
-        <div class="para">Formulated for bright, hydrated, oh-so-beautiful skin.</div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
     <div class="collection_more_btn">
@@ -401,66 +417,80 @@
 
   <!--------------------  Blog Section Start 
     ------------------------------------------------>
-  <section class="container collection_section">
+  <section class="container collection_section blog_section">
     <div class="collection_head">
       <img src="./assets/images/the-greenery.webp" alt="the-greenery" />
       <div class="head">The Greenery</div>
       <div class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam bibendum interdum ex.</div>
     </div>
-    <div class="collection_area">
-      <div class="grenery_card">
-        <img src="./assets/images/3-recipes-youll-love-inspired-by-natures-goodness.webp"
-          alt="3-recipes-youll-love-inspired-by-natures-goodness" class="w_100" />
-        <div class="head">3 Recipes You’ll Love, Inspired by Nature’s Goodness</div>
-        <div class="para">Skincare so good, you’ll want to eat it. Just kidding. Don’t do that, even if that ingredient
-          list does look like a plant-based recipe from your Pinterest dreams.</div>
-        <div class="read_more_btn">
-          <button class="btn btn-dark">
-            <span>read more</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
-                <path fill="white" fill-rule="evenodd"
-                  d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-              </svg>
-            </span>
-          </button>
+    <div class="collection_area product_area">
+      <div class="swiper collection_slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="grenery_card">
+              <img src="./assets/images/3-recipes-youll-love-inspired-by-natures-goodness.webp"
+                alt="3-recipes-youll-love-inspired-by-natures-goodness" class="w_100" />
+              <div class="head">3 Recipes You’ll Love, Inspired by Nature’s Goodness</div>
+              <div class="para">Skincare so good, you’ll want to eat it. Just kidding. Don’t do that, even if that
+                ingredient
+                list does look like a plant-based recipe from your Pinterest dreams.</div>
+              <div class="read_more_btn">
+                <button class="btn btn-dark">
+                  <span>read more</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
+                      <path fill="white" fill-rule="evenodd"
+                        d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grenery_card">
+              <img src="./assets/images/5-ideas-for-repurposing-those-beautiful-bottles-you-just-cant-part-with.webp"
+                alt="5-ideas-for-repurposing-those-beautiful-bottles-you-just-cant-part-with.webp" class="w_100" />
+              <div class="head">5 Ideas for Repurposing Those Beautiful Bottles You Just Can’t Part With</div>
+              <div class="para">You may have already noticed that Luma & Leaf is a different kind of skincare company.
+                We are
+                committed to a core set of values that shape everything we do for you.</div>
+              <div class="read_more_btn">
+                <button class="btn btn-dark">
+                  <span>read more</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
+                      <path fill="white" fill-rule="evenodd"
+                        d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="grenery_card">
+              <img src="./assets/images/how-to-take-your-skincare-routine-on-a-world-tour.webp"
+                alt="how-to-take-your-skincare-routine-on-a-world-tour" class="w_100" />
+              <div class="head">How to Take Your Skincare Routine On A World Tour</div>
+              <div class="para">After countless days spent inside, longing to hop on a plane to a much-needed getaway
+                has
+                basically become a daily occurrence. But until then, we’ll just have to dream.</div>
+              <div class="read_more_btn">
+                <button class="btn btn-dark">
+                  <span>read more</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
+                      <path fill="white" fill-rule="evenodd"
+                        d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="grenery_card">
-        <img src="./assets/images/5-ideas-for-repurposing-those-beautiful-bottles-you-just-cant-part-with.webp"
-          alt="5-ideas-for-repurposing-those-beautiful-bottles-you-just-cant-part-with.webp" class="w_100" />
-        <div class="head">5 Ideas for Repurposing Those Beautiful Bottles You Just Can’t Part With</div>
-        <div class="para">You may have already noticed that Luma & Leaf is a different kind of skincare company. We are
-          committed to a core set of values that shape everything we do for you.</div>
-        <div class="read_more_btn">
-          <button class="btn btn-dark">
-            <span>read more</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
-                <path fill="white" fill-rule="evenodd"
-                  d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-              </svg>
-            </span>
-          </button>
-        </div>
-      </div>
-      <div class="grenery_card">
-        <img src="./assets/images/how-to-take-your-skincare-routine-on-a-world-tour.webp"
-          alt="how-to-take-your-skincare-routine-on-a-world-tour" class="w_100" />
-        <div class="head">How to Take Your Skincare Routine On A World Tour</div>
-        <div class="para">After countless days spent inside, longing to hop on a plane to a much-needed getaway has
-          basically become a daily occurrence. But until then, we’ll just have to dream.</div>
-        <div class="read_more_btn">
-          <button class="btn btn-dark">
-            <span>read more</span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="0.7em" height="1.4em" viewBox="0 0 12 24">
-                <path fill="white" fill-rule="evenodd"
-                  d="M10.157 12.711L4.5 18.368l-1.414-1.414l4.95-4.95l-4.95-4.95L4.5 5.64l5.657 5.657a1 1 0 0 1 0 1.414" />
-              </svg>
-            </span>
-          </button>
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
     <div class="collection_more_btn">
@@ -639,6 +669,42 @@
           },
         },
         768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+          autoplay: false,
+        },
+      },
+    });
+
+    var swiper = new Swiper(".collection_slider", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+          },
+        },
+        676: {
           slidesPerView: 2,
           spaceBetween: 20,
           autoplay: {
